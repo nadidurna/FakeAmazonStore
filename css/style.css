@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    margin: 0px;
+    background-color: azure;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading {
+    display: flex;
+    background-color: #092E49;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.heading .logo {
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.heading .logo img {
+    width: 150px;
+    height: 100px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.heading .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3em;
+}
+
+.heading .user {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.heading .user a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: solid;
+    align-self: center;
+}
+
+.heading .user :hover {
+    border: 2px solid #eee;
+}
+
+.banner {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #0f4b76;
+    font-weight: bold;
+    color: white;
+}
+
+.content {
+    display: flex;
+    background-color: #fff;
+}
+
+.menu {
+    width: 220px;
+    height: 800px;
+    background-color: rgb(221, 214, 214);
+    flex-shrink: 0;
+    overflow: scroll;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.categories a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(47, 18, 18);
+}
+
+
+.categories h2 a {
+    padding-left: 10px;
+    color: rgb(248, 119, 6);
+}
+
+.categories a:hover {
+    opacity: 0.144;
+}
+
+.categories li {
+    list-style: none;
+    padding: 3px;
+}
+
+.container {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 180px;
+    height: 300px;
+    border: 5px solid #eee;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    transition: box-shadow 0.5s;
+    justify-content: space-between;
+
+}
+
+.product:hover {
+    box-shadow: 0px 0px 5px rgba(242, 69, 26, 0.5);
+    transition: box-shadow 0.5s;
+}
+
+.product img {
+    padding: 5px;
+}
+
+.description {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.name {
+    font-size: small;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.price {
+    color: rgb(242, 122, 26);
+    font-size: small;
+    padding-right: 15px;
+}
+
+.footer {
+    /* position: fixed; */
+    display: flex;
+    background-color: #092E49;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer .social a {
+    padding: 10px;
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-decoration: none;
+    color: #0f4b76;
+}
+
+.footer span {
+    color: white;
+    font-weight: bold;
+}
+
+.footer span a {
+    color: rgb(248, 119, 6);
+}
+
+.footer .social a:hover {
+    background-color: rgb(242, 122, 26);
+}
+
+#search {
+    font-size: 14px;
+    height: 1.6em;
+    width: 18em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#search:hover {
+    border: 2px solid rgb(228, 105, 39);
+}
+
+
+#submit {
+    font-size: .96em;
+    height: 25px;
+    width: 70px;
+    background-color: #e1a778;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    margin-left: 2px;
+    display: inline-block;
+}
+
+#submit:hover {
+    border: 1px solid rgb(159, 9, 9);
+    box-shadow: 2px 1px rgb(160, 10, 10);
+}
+
+/* 
+#submit:hover {
+    animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 0px 0px 25px rgb(160, 10, 10),
+            0px 0px 50px rgba(242, 69, 26, 0.5);
+    }
+} */
